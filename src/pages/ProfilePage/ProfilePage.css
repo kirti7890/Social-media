@@ -1,0 +1,13 @@
+.profile-page-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (max-width:450px) {
+    .profile-card {
+        width: 100%
+    }
+}

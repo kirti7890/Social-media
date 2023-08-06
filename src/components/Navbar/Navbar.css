@@ -1,0 +1,99 @@
+.mobile-nav {
+    display: none;
+}
+
+.nav-desktop {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: 0;
+    margin-top: 1rem;
+    width: 15rem;
+    min-height: 100vh;
+    border-right: 1px solid var(--clr-primary);
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-right: 0.5rem;
+}
+
+.nav-content {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+    padding-right: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1.5rem;
+}
+
+.nav-content:hover {
+    background-color: var(--clr-secondary-hover);
+    cursor: pointer;
+}
+
+.nav-icons svg {
+    font-size: 2rem;
+}
+
+.nav-desktop button {
+    width: 80%;
+    border-radius: 3rem;
+    border: none;
+    justify-self: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+.nav-profile-container {
+    margin-top: auto;
+}
+
+.nav-profile {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-self: flex-end;
+}
+
+.nav-profile:hover {
+    cursor: pointer;
+}
+
+.nav-profile-pic {
+    background-color: gray;
+    border-radius: 60%;
+    width: 40px;
+    height: 40px;
+}
+
+.not-a-link {
+    color: black;
+}
+
+@media (max-width: 450px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 50;
+        background-color: white;
+        box-shadow: 1rem 0 0.2rem 0.rem lightgray;
+    }
+
+
+}

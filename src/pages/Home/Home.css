@@ -1,0 +1,139 @@
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login {
+    width: 40%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0.5rem 0.2rem hsla(260, 11%, 85%, 1);
+    padding: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.login-form input {
+    /* padding: 1rem; */
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.login-form input {
+    margin: 1rem 0rem;
+}
+
+.password {
+    position: relative;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.input-pass-div {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.input-pass-div input {
+    margin: 0rem;
+    width: 80%;
+}
+
+.input-password {
+    border: none;
+}
+
+#password-eye {
+    cursor: pointer;
+}
+
+.login-form button {
+    /* margin: 1rem 0rem; */
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    border: 2px solid var(--clr-primary-hover);
+}
+
+.login-form button:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 6px 3px var(--clr-secondary);
+}
+
+.login-btn {
+    margin-top: 1.5rem;
+
+}
+
+#btn-default {
+    border: 2px solid var(--clr-primary-hover);
+    background-color: white;
+    margin: 1rem 0rem;
+
+}
+
+#btn-default:hover {
+    background-color: #DFEBF8;
+    border-color: var(--clr-primary);
+    /* color:white; */
+    /* font-weight: 600; */
+
+
+
+}
+
+.signup-nav {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+@media (max-width:450px) {
+    #login-img {
+        display: none;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container {
+        font-size: 1.5rem;
+    }
+
+    .login {
+        width: 100%;
+
+    }
+
+    :root {
+        font-size: 80%;
+    }
+
+}
