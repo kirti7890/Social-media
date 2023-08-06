@@ -7,7 +7,6 @@
 ## How to install and run locally?
 
 ```
-$ git clone https://github.com/BhumikaSingh-27/ShareMate.git
 $ cd sharemate
 $ npm install
 $ npm start
